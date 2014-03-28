@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" >
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" >
+    	<ToggleButton android:id="@+id/scan" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:textOn="Scan" 
+        	android:textOff="Off" />
+    	<TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Log: " />
+    	<ToggleButton android:id="@+id/onAPLog" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textOn="Logging..." 
+        android:textOff="Off" />
+    	<TextView
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Azimuth:" ></TextView>
+    	<TextView
+        android:id="@+id/tvSensor_orientation"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content" ></TextView>
+    	</LinearLayout>  
+    	<TextView
+    	    android:id="@+id/tvSensor_zgyro"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		></TextView>
+	<ListView android:id="@+id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" > 
+	</ListView>
+</LinearLayout>

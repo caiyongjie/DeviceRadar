@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"  android:orientation="horizontal" >
+    <ToggleButton android:id="@+id/isScan_conf" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textOn="scanning..." 
+        android:textOff="Off" />
+    <TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Log: " ></TextView>
+    <ToggleButton android:id="@+id/isLog_conf" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textOn="Logging..." 
+        android:textOff="Off" />
+    </LinearLayout>
+    <TextView  android:id="@+id/logNum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0 log" android:padding="2dp" />
+	<TextView  android:id="@+id/apNum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="2dp" />
+	<TextView  android:id="@+id/gpsNet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="2dp" />
+	<TextView  android:id="@+id/gpsAssit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="2dp" />
+</LinearLayout>
